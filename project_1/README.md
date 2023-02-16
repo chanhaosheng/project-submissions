@@ -84,6 +84,12 @@ There are also residential areas in Singapore which experiences slightly higher 
 
 ---
 
+### Limitations
+
+Public data on food delivery is unavailable, to compare against rainfall data and make detailed recommendations e.g. number of additional riders needed.
+
+---
+
 ### References
 *For datasets*
 1. https://data.gov.sg/

@@ -18,9 +18,9 @@ Food delivery is affected by rainy weather in Singapore. Rain, especially heavy 
 ### Datasets
 
 Datasets provided corresponding to rainfall information are: 
-* [`rainfall-monthly-highest-daily-total.csv`](./data/rainfall-monthly-highest-daily-total.csv): The highest daily total rainfall for the month recorded in millimeters(mm) from 1982 to 2022.
-* [`rainfall-monthly-number-of-rain-days.csv`](./data/rainfall-monthly-number-of-rain-days.csv): Monthly number of rain days from 1982 to 2022. A day is considered to have “rained” if the total rainfall for that day is 0.2mm or more.
-* [`rainfall-monthly-total.csv`](./data/rainfall-monthly-total.csv): Monthly total rain recorded in millimeters(mm) from 1982 to 2022 <br>
+* [`rainfall_monthly_highest_daily_total.csv`](./data/rainfall_monthly_highest_daily_total.csv): The highest daily total rainfall for the month recorded in millimeters(mm) from 1982 to 2022.
+* [`rainfall_monthly_number_of_rain_days.csv`](./data/rainfall_monthly_number_of_rain_days.csv): Monthly number of rain days from 1982 to 2022. A day is considered to have “rained” if the total rainfall for that day is 0.2mm or more.
+* [`rainfall_monthly_total.csv`](./data/rainfall_monthly_total.csv): Monthly total rain recorded in millimeters(mm) from 1982 to 2022 <br>
 Rainfall information are collected at Changi Climate Station, Singapore. Files are extracted from [data.gov.sg](https://data.gov.sg/).
 
 Additionally, the following datasets are used:

@@ -21,8 +21,8 @@ Models will be evaluated using root mean square error (RMSE) score while taking 
 ### Datasets
 
 Datasets provided: 
-* [`train.csv`](./datasets/train.csv): Training data for modelling.
-* [`test.csv`](./dataset/test.csv): Test data for the model. Target variable (resale_price) is removed.
+* [`train.csv`](./datasets/train.csv): Training data for modelling. Resale flat transactions between Mar 2012 and Apr 2021.
+* [`test.csv`](./dataset/test.csv): Test data for the model. Resale flat transactions between Mar 2012 and Apr 2021. Target variable (resale_price) is removed.
 
 <br>
 
@@ -95,8 +95,10 @@ Generally, buyers look most at size, age, convenience and location when purchasi
 ### Possible improvements
 
 - larger dataset to reduce error and improve score
+- updated dataset to train the data
 - more indicative features e.g. specific characteristics of each location; flat condition
 - more advanced models rather than linear regression
+- improve target encoding used to avoid overfitting
 
 ---
 

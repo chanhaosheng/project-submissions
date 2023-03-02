@@ -5,13 +5,16 @@ Prepared by Timothy Chan, 3 Mar 2023
 <br>
 ### Overview
 
-This project applies Exploratory Data Analysis (EDA) and Basic Regression Modelling to predict the price of houses on sale based on Singapore Housing Dataset. Models to be applied using Scikit-Learn are: Linear Regression, Lasso Regularisation and Ridge Regularisation. Models will be evaluated using root mean square error (RMSE) score while taking into consideration the number of features used.
+This project applies Exploratory Data Analysis (EDA) and Basic Regression Modelling to predict the price of houses on sale based on Singapore Housing Dataset. Models to be applied using Scikit-Learn are: Linear Regression, Lasso Regularisation and Ridge Regularisation.
 
 ---
 
 ### Problem Statement
 
 A real estate agent company in Singapore would like to know how to advise clients on the appropriate prices to list their flats for resale. They require a reproducable model to predict Housing & Development Board (HDB) resale prices based on available information about the flat, as well as to understand the key factors affecting pricing of resale flats.
+
+### Evaluation
+Models will be evaluated using root mean square error (RMSE) score while taking into consideration the number of features used.
 
 ---
 
@@ -22,7 +25,7 @@ Datasets provided corresponding to rainfall information are:
 * [`test.csv`](./dataset/test.csv): Test data for the model.
 
 <br>
-<br>
+
 #### Data dictionary of cleaned training and testing files before performing one-hot encoding.
 
 |Features|Type|Dataset|Description|

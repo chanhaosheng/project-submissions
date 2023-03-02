@@ -20,7 +20,7 @@ Models will be evaluated using root mean square error (RMSE) score while taking 
 
 ### Datasets
 
-Datasets provided corresponding to rainfall information are: 
+Datasets provided: 
 * [`train.csv`](./datasets/train.csv): Training data for modelling.
 * [`test.csv`](./dataset/test.csv): Test data for the model. Target variable (resale_price) is removed.
 

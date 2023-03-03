@@ -11,6 +11,8 @@ This project applies Exploratory Data Analysis (EDA) and Basic Regression Modell
 
 ### Problem Statement
 
+Resale flat transactions are substantial: they accounted for [60.5% of all sale transactions in 3rd Quarter 2022](https://www.ura.gov.sg/Corporate/Media-Room/Media-Releases/pr22-38).
+
 A real estate agent company in Singapore would like to know how to advise clients on the appropriate prices to list their flats for resale. They require a reproducable model to predict Housing & Development Board (HDB) resale prices based on available information about the flat, as well as to understand the key factors affecting pricing of resale flats.
 
 ### Evaluation
@@ -107,3 +109,5 @@ Generally, buyers look most at size, age, convenience and location when purchasi
 1. https://www.propertyguru.com.sg/property-guides/hdb-valuation-sales-12882
 2. https://www.teoalida.com/singapore/lease/
 3. https://www.singsaver.com.sg/blog/average-cost-of-home-renovations-singapore
+4. https://www.ura.gov.sg/Corporate/Media-Room/Media-Releases/pr22-38
+

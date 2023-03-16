@@ -37,8 +37,8 @@ Subreddit description of `r/stopdrinking`:
 This subreddit is a place to motivate each other to control or stop drinking. We welcome anyone who wishes to join in by asking for advice, sharing our experiences and stories, or just encouraging someone who is trying to quit or cut down. Please post only when sober; you're welcome to read in the meanwhile.
 
 Datasets saved: 
-* [`data_nosurf.csv`](./datasets/data_nosurf.csv)
-* [`data_stopdrinking.csv`](./dataset/data_stopdrinking.csv)
+* [`data_nosurf.csv`](./data/data_nosurf.csv)
+* [`data_stopdrinking.csv`](./data/data_stopdrinking.csv)
 
 <br>
 

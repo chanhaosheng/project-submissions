@@ -1,4 +1,4 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) # Project 3 - Web APIs & NLP on Internet and Alcohol Addiction Subreddits
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project 3 - Web APIs & NLP on Internet and Alcohol Addiction Subreddits
 
 Prepared by Timothy Chan, 17 Mar 2023
 <br>
@@ -73,7 +73,7 @@ Technical reports submitted:
 |7|Gradient Boosting|Count Vectorizer|0.933|0.977|0.920|28|12|
 |8|Gradient Boosting|TF-IDF Vectorizer|0.919|0.997|0.918|29|12|
 
-Count Vectorizer with Multinomial Naive Bayes (Model 1) has the best accuracy. It also runs faster than the Ensemble models. This model was chosen.
+Count Vectorizer with Multinomial Naive Bayes (Model 1) has the best accuracy. This model was chosen.
 
 ---
 

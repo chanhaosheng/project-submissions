@@ -1,6 +1,6 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project Submissions for General Assembly Data Science Immersive Course
 
-An archive of the analysis and machine learning projects done during my DSI course. While it still just the beginning of the journey, I've come a long way and am glad I took this step.
+An archive of the analysis and machine learning projects done during my DSI course. While it is only the beginning of the journey, I've come a long way and am glad I took this step.
 <br>
 <br>
 

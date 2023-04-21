@@ -22,7 +22,9 @@ def pred_data(userid):
     ranker = lgb.Booster(model_file=model_path)
 
     # import preprocessed dataset
-    test = pd.read_parquet('./test_deploy.parquet')
+    test_path = os.path.join(os.path.dirname(__file__), 'test_deploy.parquet')
+    test = pd.read_parquet(test_path)
+
 
     # preprocess test data
     feature_cols = test.columns[2:]

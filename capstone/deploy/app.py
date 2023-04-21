@@ -57,22 +57,18 @@ col1, col2 = st.columns(2)
 # predict button
 if st.button('Predict'):
     prediction = pred_data(userid)
-    col1.markdown(f'**User {userid}**')
-    col1.markdown(f'### Empfehlungen für dich:')
+    st.markdown(f'**User {userid}**')
+    st.markdown(f'### Empfehlungen für dich:')
     prediction_list = prediction.split(', ')
-    num_rows = 10
-    num_cols = 2
-    for row in range(num_rows):
-        for col in range(num_cols):
-            i = row * num_cols + col
-            if i < len(prediction_list):
-                # create a new copy of the box image for each order
-                order_image = box_image.copy()
+    for i, aid in enumerate(prediction_list):
+        # create a new copy of the box image for each order
+        order_image = box_image.copy()
 
-                # place the box image and aid value in the appropriate cell
-                with (col1 if col == 0 else col2).beta_container():
-                    st.image(order_image, width=125)
-                    st.write(f'Product {i+1}: {prediction_list[i]}')
+        # display the box image in Streamlit
+        st.image(order_image, width=125)
+
+        # display the aid value below the box image
+        st.write(f'Product {i+1}: {aid}')
 
 st.write('')
 st.write('')

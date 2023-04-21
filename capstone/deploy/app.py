@@ -17,7 +17,7 @@ userid = st.number_input('User ID', min_value=13000001, max_value=13010000)
 # function to predict
 def pred_data(userid):
     # load the LightGBM model from binary file
-    ranker = lgb.load(model_file='model.txt')
+    ranker = lgb.Booster(model_file='model.txt')
 
     # import preprocessed dataset
     test = pd.read_parquet('./test_deploy.parquet')

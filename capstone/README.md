@@ -1,6 +1,6 @@
 # OTTO Multi-Objective Recommender System
 
-Prepared by: Timothy Chan, 28 Apr 2023
+Prepared by: Timothy Chan, 27 Apr 2023
 <br>
 <br>
 ### Overview
@@ -74,6 +74,7 @@ Technical reports submitted under `code` folder:
 Deployment codes are submitted under `deploy` folder:
 * [`app.py`](./deploy/app.py): Application to run the model
 * [`box.png`](./deploy/box.png): Image of box as proxy of item images
+* [`demo.gif`](./deploy/demo.gif): Demonstration of app working
 * [`model.txt`](./deploy/model.txt): Saved LGBM Ranker model
 * [`requirements.txt`](./deploy/requirements.txt): List of libraries with versions
 * [`test_deploy.parquet`](./deploy/test_deploy.parquet): Reduced dataset to run the model

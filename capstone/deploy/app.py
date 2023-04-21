@@ -58,19 +58,21 @@ col1, col2 = st.columns(2)
 if st.button('Predict'):
     prediction = pred_data(userid)
     col1.markdown(f'**User {userid}**')
-    col1.markdown(f'### Empfehlungen für dich:                   ')
+    col1.markdown(f'### Empfehlungen für dich:')
     prediction_list = prediction.split(', ')
-    for i, aid in enumerate(prediction_list):
-        # create a new copy of the box image for each order
-        order_image = box_image.copy()
+    num_rows = 10
+    num_cols = 2
+    for row in range(num_rows):
+        for col in range(num_cols):
+            i = row * num_cols + col
+            if i < len(prediction_list):
+                # create a new copy of the box image for each order
+                order_image = box_image.copy()
 
-        # display the box image in Streamlit
-        col_idx = i % 2
-        row_idx = i // 2
-        col = col1 if col_idx == 0 else col2
-        with col.beta_container():
-            st.image(order_image, width=125)
-            st.write(f'Product {i+1}: {aid}')
+                # place the box image and aid value in the appropriate cell
+                with (col1 if col == 0 else col2).beta_container():
+                    st.image(order_image, width=125)
+                    st.write(f'Product {i+1}: {prediction_list[i]}')
 
 st.write('')
 st.write('')

@@ -4,7 +4,7 @@ An archive of the analysis and machine learning projects done during my DSI cour
 <br>
 <br>
 
-<small>
+<span style="font-size: 10px;">
 
 |#|Date|Project|Scope|
 |:---|:---|:---|:---|
@@ -14,5 +14,5 @@ An archive of the analysis and machine learning projects done during my DSI cour
 |4|3 Apr 23|West Nile Virus Prediction (Kaggle)|- EDA <br> - Classification models (Logistic Regression, Naive Bayes, Random Forest, XGBoost) <br> - Cost-Benefit Analysis|
 |5|28 Apr 23|OTTO Multi-Objective Recommender System|- EDA <br> - Rule-based ranker <br> - Boosting rankers (LGBM and XGB) <br> - Covisitation Matrix <br> - Handle large datasets|
 
-</small>
+</span>
 

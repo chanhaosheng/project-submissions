@@ -47,6 +47,9 @@ def pred_data(userid):
     prediction_str = ", ".join(str(x) for x in prediction)[1:-1]
     return prediction_str
 
+# load box template image
+image_path = os.path.join(os.path.dirname(__file__), 'box.png')
+box_image = Image.open(image_path)
 
 # predict button
 if st.button('Predict'):
@@ -55,6 +58,11 @@ if st.button('Predict'):
     st.markdown(f'### Empfehlungen für dich:')
     prediction_list = prediction.split(', ')
     for i, aid in enumerate(prediction_list):
+        # create a new copy of the box image for each order
+        order_image = box_image.copy()
+
+        # display the box image in Streamlit
+        st.image(order_image, width=125)
 
         # display the aid value below the box image
         st.write(f'Product {i+1}: {aid}')

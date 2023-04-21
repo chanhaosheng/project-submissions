@@ -58,7 +58,7 @@ col1, col2 = st.columns(2)
 if st.button('Predict'):
     prediction = pred_data(userid)
     col1.markdown(f'**User {userid}**')
-    col1.markdown(f'### Empfehlungen für dich:')
+    col1.markdown(f'### Empfehlungen für dich:                   ')
     prediction_list = prediction.split(', ')
     for i, aid in enumerate(prediction_list):
         # create a new copy of the box image for each order

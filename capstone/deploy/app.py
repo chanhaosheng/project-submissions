@@ -51,21 +51,26 @@ def pred_data(userid):
 image_path = os.path.join(os.path.dirname(__file__), 'box.png')
 box_image = Image.open(image_path)
 
+# create two columns
+col1, col2 = st.columns(2)
+
 # predict button
 if st.button('Predict'):
     prediction = pred_data(userid)
-    st.markdown(f'**User {userid}**')
-    st.markdown(f'### Empfehlungen für dich:')
+    col1.markdown(f'**User {userid}**')
+    col1.markdown(f'### Empfehlungen für dich:')
     prediction_list = prediction.split(', ')
     for i, aid in enumerate(prediction_list):
         # create a new copy of the box image for each order
         order_image = box_image.copy()
 
         # display the box image in Streamlit
-        st.image(order_image, width=125)
-
-        # display the aid value below the box image
-        st.write(f'Product {i+1}: {aid}')
+        col_idx = i % 2
+        row_idx = i // 2
+        col = col1 if col_idx == 0 else col2
+        with col.beta_container():
+            st.image(order_image, width=125)
+            st.write(f'Product {i+1}: {aid}')
 
 st.write('')
 st.write('')

@@ -4,6 +4,7 @@ import pandas as pd
 import lightgbm as lgb
 import streamlit as st
 from PIL import Image
+import os
 
 # title
 st.markdown('## Otto Recommender: Predict Next 20 Orders')
@@ -17,7 +18,8 @@ userid = st.number_input('User ID', min_value=13000001, max_value=13010000)
 # function to predict
 def pred_data(userid):
     # load the LightGBM model from binary file
-    ranker = lgb.Booster(model_file='./project-submissions/capstone/model.txt')
+    model_path = os.path.join(os.getcwd(), 'models', 'model.txt')
+    ranker = lgb.Booster(model_file=model_path)
 
     # import preprocessed dataset
     test = pd.read_parquet('./test_deploy.parquet')

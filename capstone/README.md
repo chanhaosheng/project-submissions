@@ -20,7 +20,7 @@ My role is to use implicit information to build and deploy a model to predict th
 
 Scores are evaluated on `Recall@20` for each action type, and the three recall values are weight-averaged:
 
-    Score = (0.10 ⋅ Rclicks) + (0.30 ⋅ Rcarts) + (0.30 ⋅ Rorders)
+    Score = (0.10 ⋅ Rclicks) + (0.30 ⋅ Rcarts) + (0.60 ⋅ Rorders)
 
 where
 
@@ -107,7 +107,7 @@ Key issues and how it was resolved:
 |2|Rule-based|Weighted + Covisitation matrix|0.51218||
 |3|**Rule-based**|Weighted + Differentiation + 3x Covisitation matrix|**0.57650**|Requires GPU+Rapids|
 |4|LGBM Ranker|Reranked from 30 ranked candidates|0.55088|Used Polars, Orders only|
-|5|XGB Ranker|Reranked from 30 ranked candidates|0.45848|Requires GPU+Rapids, Orders only|
+|5|XGB Ranker|Reranked from 30 ranked candidates|0.45841|Requires GPU+Rapids, Orders only|
 
 Rule-based approach gave the best score, was easiest to understand and had far less steps. As such we recommend using the rule-based ranker (Model 3). <br>
 
@@ -123,6 +123,10 @@ For deployment, we will explore using LGBM Ranker (Model 4) as the scoring is no
 - Type. Items in carts (or that were carted) have higher tendency of items being orders.
 - Frequency of click/buys.
 - Covisitation. If items were clicked/purchased on the same day.
+
+**Other applications**
+- New user vouchers to encourage activity, to reduce cold start problem
+- Identify bundled deals / recommend complementary items
 
 **Possible improvements (given more time and GPU resources)**
 - In hindsight, I could built a better pipeline including validation so that I could experiment and select better candidates/features/hyperparameter for the reranker. However, doing multiple experiments is also resource intensive

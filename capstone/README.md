@@ -105,7 +105,7 @@ Key issues and how it was resolved:
 |:---|:---|:---|:---|:---|
 |1|Rule-based|Most recent items for each user|0.46682||
 |2|Rule-based|Weighted + Covisitation matrix|0.51218||
-|3|**Rule-based**|Weighted + Differentiation + 3x Covisitation matrix|**0.57650**|Requires GPU+Rapids|
+|3|**Rule-based**|Weighted + Differentiation + 3x Covisitation matrix|**0.57648**|Requires GPU+Rapids|
 |4|LGBM Ranker|Reranked from 30 ranked candidates|0.55088|Used Polars, Orders only|
 |5|XGB Ranker|Reranked from 30 ranked candidates|0.45841|Requires GPU+Rapids, Orders only|
 

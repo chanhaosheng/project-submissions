@@ -33,11 +33,11 @@ Recall@k is the proportion of relevant items found in the top-k recommendations.
 
 ### Datasets
 
-Datasets are provided on Kaggle in jsonl format. As my machine is unable to read jsonl, I used a compressed version in parquet form shared on Kaggle. 
+Datasets are provided on Kaggle in jsonl format. As my machine is unable to read jsonl, I used a compressed version in parquet form shared on [Kaggle](https://www.kaggle.com/datasets/radek1/otto-full-optimized-memory-footprint). 
 
 Data are is between 2022-08-01 and 2022-08-28 for train and between 2022-08-29 and 2022-09-04 for test.
 
-Datasets: 
+Datasets:
 * `train.parquet`
 * `test.parquet`
 
@@ -80,7 +80,7 @@ Deployment codes are submitted under `deploy` folder:
 * [`test_deploy.parquet`](./deploy/test_deploy.parquet): Reduced dataset to run the model
 
 Slides:
-* [`slides.ppt`](./slides.ppt)
+* [`slides.pdf`](./slides.pdf)
 
 ---
 
